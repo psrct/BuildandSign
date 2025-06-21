@@ -1,0 +1,36 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow crawling of admin areas and sensitive files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /search?*
+
+# Allow crawling of important files
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /manifest.json
+
+# Crawl delay (optional - be careful with this)
+# Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://buildandsign.com/sitemap.xml
+Sitemap: https://buildandsign.com/sitemap-articles.xml
+Sitemap: https://buildandsign.com/sitemap-services.xml
+
+# Host (optional - specify preferred domain)
+Host: https://buildandsign.com
