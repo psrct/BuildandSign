@@ -22,10 +22,10 @@ export default function Whyus(){
                 <img src="whyus/2.jpg" alt="ออกแบบโดยทีม Graphic" className=" w-50 h-40 border-[#0000dc] border-3" />
                 <img src="whyus/3.jpg" alt="ให้คำแนะนำลูกค้า" className=" w-50 h-40 border-[#0000dc] border-3" />
                 <img src="whyus/4.PNG" alt="ใช้วัสดุคุณภาพ" className=" w-50 h-40 border-[#0000dc] border-3" />
-                <img src="whyus/5.jpg" alt="ส่งงานตรงเวลา" className=" w-50 h-40 border-[#0000dc] border-3" />
-                <img src="whyus/6.jpg" alt="บริการจัดส่งทั่วประเทศ" className=" w-50 h-40 border-[#0000dc] border-3" />
-                <img src="whyus/7.jpg" alt="รับประกันหลังการขาย" className=" w-50 h-40 border-[#0000dc] border-3" />
-                <img src="whyus/8.jpg" alt="ส่งงานตรงเวลา" className=" w-50 h-40 border-[#0000dc] border-3" />
+                <img src="whyus/5.JPG" alt="ส่งงานตรงเวลา" className=" w-50 h-40 border-[#0000dc] border-3" />
+                <img src="whyus/6.JPG" alt="บริการจัดส่งทั่วประเทศ" className=" w-50 h-40 border-[#0000dc] border-3" />
+                <img src="whyus/7.JPG" alt="รับประกันหลังการขาย" className=" w-50 h-40 border-[#0000dc] border-3" />
+                <img src="whyus/8.JPG" alt="ส่งงานตรงเวลา" className=" w-50 h-40 border-[#0000dc] border-3" />
             </div>
 
     </div>
