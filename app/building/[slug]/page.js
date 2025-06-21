@@ -73,7 +73,7 @@ export default async function BuildingDetailPage({ params }) {
                 {/* Building Image */}
                 <div className="mb-8">
                   <Image
-                    src={`${baseUrl}${building.image.url}`}
+                    src={`${baseUrl + building.image.url}`}
                     alt={building.image.alternativeText || building.title}
                     width={800}
                     height={400}

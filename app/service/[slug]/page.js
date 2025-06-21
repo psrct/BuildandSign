@@ -40,7 +40,7 @@ export default async function ServiceDetailPage({ params }) {
     <>
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="relative h-96 bg-blue-600 overflow-hidden">
+        <div className="relative h-96 bg-[#3071b1] overflow-hidden">
           <div className="absolute inset-0">
             <Image
               src={`${baseUrl}${service.image.url}`}
@@ -92,7 +92,7 @@ export default async function ServiceDetailPage({ params }) {
                       <ul className="space-y-2">
                         {service.features.map((feature, index) => (
                           <li key={index} className="flex items-start">
-                            <span className="text-blue-600 mr-2">✓</span>
+                            <span className="text-[#3071b1] mr-2">✓</span>
                             <span className="text-gray-700">{feature}</span>
                           </li>
                         ))}
@@ -116,28 +116,28 @@ export default async function ServiceDetailPage({ params }) {
                 <h3 className="text-2xl font-semibold text-gray-800 mb-6">ขั้นตอนการทำงาน</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">1</div>
+                    <div className="bg-[#3071b1] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">1</div>
                     <div>
                       <h4 className="font-semibold text-gray-800">สำรวจหน้างาน</h4>
                       <p className="text-gray-600 text-sm">ประเมินและวางแผนการทำงาน</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">2</div>
+                    <div className="bg-[#3071b1] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">2</div>
                     <div>
                       <h4 className="font-semibold text-gray-800">ออกแบบ</h4>
                       <p className="text-gray-600 text-sm">สร้างแบบตามความต้องการ</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">3</div>
+                    <div className="bg-[#3071b1] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">3</div>
                     <div>
                       <h4 className="font-semibold text-gray-800">ผลิต</h4>
                       <p className="text-gray-600 text-sm">ผลิตด้วยวัสดุคุณภาพ</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">4</div>
+                    <div className="bg-[#3071b1] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">4</div>
                     <div>
                       <h4 className="font-semibold text-gray-800">ติดตั้ง</h4>
                       <p className="text-gray-600 text-sm">ติดตั้งโดยช่างมืออาชีพ</p>
@@ -173,7 +173,7 @@ export default async function ServiceDetailPage({ params }) {
                   <a
                     href="https://www.facebook.com/profile.php?id=61576667166263"
                     target="blank"
-                    className="block w-full bg-blue-600 text-white text-center py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                    className="block w-full bg-[#3071b1] text-white text-center py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium"
                   >
                     📧 ทักแชท
                   </a>

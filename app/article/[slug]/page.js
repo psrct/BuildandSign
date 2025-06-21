@@ -105,8 +105,8 @@ export default async function ArticleDetail({ params }) {
   }
   
   const article = articles[0];
-  const baseUrl = process.env.STRAPI_URL;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_API_URLL;
+  const siteUrl = process.env.NEXT_PUBLIC_API_URL;
   const canonicalUrl = `${siteUrl}/article/${article.slug}`;
   
   // Generate structured data for article

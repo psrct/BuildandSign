@@ -118,7 +118,7 @@ export default function Footer() {
                   aria-hidden="true" 
                 />
                 <a 
-                  href="tel:+66806976334" 
+                  href="tel:0806976334"
                   className="font-medium hover:text-yellow-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-blue-600 rounded px-1"
                   aria-label="โทรหาเรา 080-697-6334"
                 >

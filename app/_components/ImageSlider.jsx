@@ -11,6 +11,10 @@ const imageData = [
     src: '/poster1.jpg',
     alt: 'ตัวอย่างงานป้ายอาคารและป้ายโฆษณา - BuildandSign', 
   },
+  {
+    src: '/poster2.jpg',
+    alt: 'ตัวอย่างงานป้ายอาคารและป้ายโฆษณา งานก่อสร้าง สร้างอาคาร สร้างโกดัง - BuildandSign', 
+  },
 ];
 
 export default function ImageSlider() {
