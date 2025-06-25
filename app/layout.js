@@ -10,13 +10,13 @@ const slabo = Slabo_13px({
 })
 
 export const metadata = {
-  title: 'รับทำป้าย ป้ายไฟ ป้ายอาคาร งานต่อเติม | BuildandSign',
+  title: 'BuildandSign | รับทำป้าย ป้ายไฟ ป้ายอาคาร งานต่อเติม',
   description: 'รับทำป้ายครบวงจร ป้ายโฆษณา ป้ายไฟ LED ป้ายอาคาร งานต่อเติม โกดัง หลังคา โครงหลังคา ที่จอดรถ ด้วยทีมช่างมืออาชีพ ราคาถูก คุณภาพดี',
   keywords: 'รับทำป้าย, ป้ายไฟ, ป้ายอาคาร, ป้ายโฆษณา, ป้าย LED, งานต่อเติม, โกดัง, หลังคา, ที่จอดรถ, ช่างป้าย, ราคาถูก',
   author: 'BuildandSign',
   robots: 'index, follow',
   openGraph: {
-    title: 'รับทำป้าย ป้ายไฟ ป้ายอาคาร งานต่อเติม | BuildandSign',
+    title: 'BuildandSign | รับทำป้าย ป้ายไฟ ป้ายอาคาร งานต่อเติม',
     description: 'รับทำป้ายครบวงจร ป้ายโฆษณา ป้ายไฟ LED ป้ายอาคาร งานต่อเติม โกดัง หลังคา โครงหลังคา ที่จอดรถ ด้วยทีมช่างมืออาชีพ',
     url: 'https://buildandsign.com',
     siteName: 'BuildandSign',
@@ -33,7 +33,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'รับทำป้าย ป้ายไฟ ป้ายอาคาร งานต่อเติม | BuildandSign',
+    title: 'BuildandSign | รับทำป้าย ป้ายไฟ ป้ายอาคาร งานต่อเติม',
     description: 'รับทำป้ายครบวงจร ป้ายโฆษณา ป้ายไฟ LED ป้ายอาคาร งานต่อเติม โกดัง หลังคา โครงหลังคา ที่จอดรถ',
     images: ['https://buildandsign.com/twitter-image.jpg'],
   },
