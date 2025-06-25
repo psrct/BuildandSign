@@ -1,5 +1,4 @@
 import "./globals.css";
-import { IBM_Plex_Sans_Thai } from 'next/font/google';
 import Header from "./_components/Header";
 import SideContact from "./_components/SideContact";
 import Footer from "./_components/Footer";
@@ -7,11 +6,6 @@ import { Slabo_13px } from 'next/font/google';
 
 const slabo = Slabo_13px({
   subsets: ['latin'],
-  weight: '400',
-})
-
-const ibm = IBM_Plex_Sans_Thai({
-  subsets: ['thai'],
   weight: '400',
 })
 
@@ -121,14 +115,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         
-        {/* Preload critical resources */}
-        <link rel="preload" href="/fonts/ibm-plex-sans-thai.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
       </head>
-      <body className={`${ibm.className} antialiased`}>
+      <body>
         {/* Skip to main content for accessibility */}
         <a href="#main-content" className="skip-link">
           ไปยังเนื้อหาหลัก
