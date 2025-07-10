@@ -1,7 +1,8 @@
 import axios from 'axios';
+import Head from 'next/head';
 
 export async function generateMetadata({ params }) {
-  const slug = params.slug;
+  const slug = await params;
 
   try {
     const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/articles?filters[slug][$eq]=${slug}&populate=*`);
@@ -87,7 +88,8 @@ async function getArticle(slug) {
 }
 
 export default async function ArticleDetail({ params }) {
-  const articles = await getArticle(params.slug);
+  const { slug } = await params
+  const articles = await getArticle(slug);
   
   // Handle case where article is not found
   if (!articles || articles.length === 0) {
@@ -179,9 +181,9 @@ export default async function ArticleDetail({ params }) {
     <>
       <Head>
         {/* Primary Meta Tags */}
-        <title>{pageTitle}</title>
-        <meta name="title" content={pageTitle} />
-        <meta name="description" content={pageDescription} />
+        <title>${article.title}</title>
+        <meta name="title" content={`${article.title}`}/>
+        <meta name="description" content={`${article.description}`} />
         <meta name="keywords" content={`${article.title}, ป้ายก่อสร้าง, ป้ายโครงการ, ป้ายเตือน, ป้ายความปลอดภัย, งานป้าย`} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="author" content="BuildandSign" />
@@ -204,8 +206,8 @@ export default async function ArticleDetail({ params }) {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="BuildandSign" />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={pageDescription} />
+        <meta property="og:title" content={`${article.title}`} />
+        <meta property="og:description" content={`${article.description}`} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:locale" content="th_TH" />
         {article.publishedAt && (
@@ -228,8 +230,8 @@ export default async function ArticleDetail({ params }) {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:title" content={`${article.title}`} />
+        <meta name="twitter:description" content={`${article.description}`} />
         {article.image?.[0] && (
           <meta name="twitter:image" content={`${baseUrl}${article.image[0].url}`} />
         )}

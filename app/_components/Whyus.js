@@ -3,14 +3,14 @@ export default function Whyus(){
         <div className="mx-auto max-w-full w-full h-full pt-10 bg-[#FFD369] scroll-mt-20" id="whyus">
             <div className=" text-center" >
                 <div className="flex justify-center pt-10 font-bold">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl text-red-500 text-shadow-md text-shadow-white">
+                    <h2 className="text-[32px] md:text-5xl lg:text-6xl text-red-500 text-shadow-md text-shadow-white">
                         ทำไม.. 
                     </h2>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl text-black text-shadow-md text-shadow-white">
+                    <h2 className="text-[32px] md:text-5xl lg:text-6xl text-black text-shadow-md text-shadow-white">
                         ถึงต้องใช้บริการกับ
                     </h2>
                 </div>
-                <h2 className="text-[#0101bd] text-4xl md:text-5xl lg:text-6xl justify-self-center font-extrabold pt-5 text-shadow-md text-shadow-white">
+                <h2 className="text-[#0101bd] text-4xl md:text-5xl lg:text-6xl justify-self-center font-extrabold pt-2 text-shadow-md text-shadow-white">
                         BuildandSign
                 </h2>
                 <p className="text-black font-medium text-xl md:text-2xl w-auto justify-self-center px-20 py-10 max-sm:px-5">

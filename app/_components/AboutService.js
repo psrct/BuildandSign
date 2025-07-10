@@ -55,7 +55,7 @@ export default async function AboutService(){
 
           {/* Card Section */}
           <div 
-            className="px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+            className="md:px-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="400"
@@ -70,7 +70,7 @@ export default async function AboutService(){
                   data-aos-delay={index * 100}
                 >
                   {/* รูปภาพเต็มกรอบด้านบน */}
-                  <div className="w-full h-40 overflow-hidden">
+                  <div className="w-full h-35 overflow-hidden">
                     <img
                       src={`${baseUrl + service.image.url}`}
                       alt={service.image.alternativeText + service.title + service.detail}
@@ -79,7 +79,7 @@ export default async function AboutService(){
                   </div>
                   
                   {/* Title ด้านล่าง */}
-                  <div className="p-4 text-center flex-grow flex items-center justify-center">
+                  <div className="p-2 text-center flex-grow flex items-center justify-center">
                     <h3 className="text-base font-semibold text-gray-800 group-hover:text-[#065a95] transition-colors">
                       {service.title}
                     </h3>
@@ -129,7 +129,7 @@ export default async function AboutService(){
             data-aos-duration="1000"
             data-aos-delay="400"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
               {builds.map((building, index) => (
                 <Link
                   key={building.id}
@@ -139,7 +139,7 @@ export default async function AboutService(){
                   data-aos-duration="800"
                   data-aos-delay={index * 100}
                 >
-                  <div className="w-[100px] h-[100px] flex items-center justify-center max-sm:w-[100px] max-sm:h-[100px] overflow-hidden rounded-xl">
+                  <div className="w-[80px] h-[80px] flex items-center justify-center max-sm:w-[80px] max-sm:h-[80px] overflow-hidden rounded-xl">
                     <img
                       src={`${baseUrl + building.image.url}`}
                       alt={building.image.alternativeText + building.title + building.detail}

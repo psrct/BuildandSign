@@ -1,6 +1,7 @@
 import Image from "next/image"
 import axios from "axios"
 import { notFound } from 'next/navigation'
+import { FaPhoneAlt, FaLine, FaFacebookMessenger } from 'react-icons/fa'
 
 const fetchServiceBySlug = async (slug) => {
   try {
@@ -25,7 +26,8 @@ const fetchAllServices = async () => {
 }
 
 export default async function ServiceDetailPage({ params }) {
-  const { slug } = params
+  const { slug } = 
+   params
   const service = await fetchServiceBySlug(slug)
   const allServices = await fetchAllServices()
   
@@ -46,7 +48,7 @@ export default async function ServiceDetailPage({ params }) {
               src={`${baseUrl}${service.image.url}`}
               alt={service.image.alternativeText || service.title}
               fill
-              className="object-cover opacity-30"
+              className="justify-self-center object-cover opacity-30"
             />
           </div>
           <div className="relative z-10 flex items-center justify-center h-full px-4">
@@ -157,25 +159,25 @@ export default async function ServiceDetailPage({ params }) {
                 <div className="space-y-4">
                   <a
                     href="tel:0806976334"
-                    className="block w-full bg-gray-800 text-white text-center py-3 px-4 rounded-lg hover:bg-gray-900 transition-colors font-medium"
+                    className="flex w-full bg-gray-800 text-white text-center py-3 px-4 rounded-lg justify-center hover:bg-gray-900 transition-colors font-medium"
                   >
-                    📞 โทรเลย
+                    <FaPhoneAlt className="text-white text-lg" id='icon' /><span className="px-2">โทรเลย</span>
                   </a>
                   
                   <a
                     href="https://lin.ee/mWvzu1v"
                     target="blank"
-                    className="block w-full bg-green-500 text-white text-center py-3 px-4 rounded-lg hover:bg-green-600 transition-colors font-medium"
+                    className="flex w-full bg-green-500 text-white text-center py-3 px-4 rounded-lg justify-center hover:bg-green-600 transition-colors font-medium"
                   >
-                    💬 Line
+                    <FaLine className="text-white text-lg" id='icon' /><span className="px-2">Line</span>
                   </a>
                   
                   <a
                     href="https://www.facebook.com/profile.php?id=61576667166263"
                     target="blank"
-                    className="block w-full bg-[#3071b1] text-white text-center py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                    className="flex w-full bg-blue-600 text-white text-center py-3 px-4 rounded-lg justify-center hover:bg-blue-700 transition-colors font-medium"
                   >
-                    📧 ทักแชท
+                    <FaFacebookMessenger className="text-white text-lg" id='icon' /><span className="px-2">ทักแชท</span>
                   </a>
                 </div>
 
@@ -198,7 +200,7 @@ export default async function ServiceDetailPage({ params }) {
                       <a
                         key={relatedService.id}
                         href={`/service/${relatedService.slug}`}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-200 transition-colors"
                       >
                         <Image
                           src={`${baseUrl}${relatedService.image.url}`}

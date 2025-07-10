@@ -2,6 +2,7 @@ import Image from "next/image"
 import axios from "axios"
 import { notFound } from 'next/navigation'
 import Link from "next/link"
+import { FaPhoneAlt, FaLine, FaFacebookMessenger } from 'react-icons/fa'
 
 const fetchBuildingBySlug = async (slug) => {
   try {
@@ -26,7 +27,7 @@ const fetchAllBuildings = async () => {
 }
 
 export default async function BuildingDetailPage({ params }) {
-  const { slug } = params
+  const { slug } = await params
   const building = await fetchBuildingBySlug(slug)
   const allBuildings = await fetchAllBuildings()
   
@@ -75,8 +76,8 @@ export default async function BuildingDetailPage({ params }) {
                   <Image
                     src={`${baseUrl + building.image.url}`}
                     alt={building.image.alternativeText || building.title}
-                    width={800}
-                    height={400}
+                    width={100}
+                    height={50}
                     className="w-full h-96 object-cover rounded-lg shadow-md"
                   />
                 </div>
@@ -190,25 +191,25 @@ export default async function BuildingDetailPage({ params }) {
                 <div className="space-y-4">
                   <a
                     href="tel:0806976334"
-                    className="block w-full bg-gray-800 text-white text-center py-3 px-4 rounded-lg hover:bg-gray-900 transition-colors font-medium"
+                    className="flex w-full bg-gray-800 text-white text-center py-3 px-4 rounded-lg justify-center hover:bg-gray-900 transition-colors font-medium"
                   >
-                    📞 โทรเลย
+                    <FaPhoneAlt className="text-white text-lg" id='icon' /><span className="px-2">โทรเลย</span>
                   </a>
                   
                   <a
                     href="https://lin.ee/mWvzu1v"
                     target="blank"
-                    className="block w-full bg-green-500 text-white text-center py-3 px-4 rounded-lg hover:bg-green-600 transition-colors font-medium"
+                    className="flex w-full bg-green-500 text-white text-center py-3 px-4 rounded-lg justify-center hover:bg-green-600 transition-colors font-medium"
                   >
-                    💬 Line
+                    <FaLine className="text-white text-lg" id='icon' /><span className="px-2">Line</span>
                   </a>
                   
                   <a
                     href="https://www.facebook.com/profile.php?id=61576667166263"
                     target="blank"
-                    className="block w-full bg-blue-600 text-white text-center py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                    className="flex w-full bg-blue-600 text-white text-center py-3 px-4 rounded-lg justify-center hover:bg-blue-700 transition-colors font-medium"
                   >
-                    📧 ทักแชท
+                    <FaFacebookMessenger className="text-white text-lg" id='icon' /><span className="px-2">ทักแชท</span>
                   </a>
                 </div>
 
