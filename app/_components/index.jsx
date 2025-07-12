@@ -14,7 +14,7 @@ export default function Home() {
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <h1 
-              className="text-[#0101bd] text-5xl lg:text-6xl justify-self-center justify-center item-center font-extrabold"
+              className="text-[#0101bd] text-5xl lg:text-6xl font-extrabold flex justify-center items-center text-center"
               id="head"
               data-aos="fade-up"
               data-aos-duration="1200"
