@@ -14,7 +14,7 @@ export default function Home() {
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <h1 
-              className="text-[#0101bd] text-5xl lg:text-6xl justify-self-center item-center font-extrabold"
+              className="text-[#0101bd] text-5xl lg:text-6xl justify-self-center justify-center item-center font-extrabold"
               id="head"
               data-aos="fade-up"
               data-aos-duration="1200"
@@ -66,7 +66,7 @@ export default function Home() {
       </div>
 
       <div 
-        className="flex justify-self-center gap-6 p-5 max-sm:block mx-13 mt-5"
+        className="flex justify-self-center justify-center items-center  gap-6 p-5 max-sm:block mx-13 mt-5"
         id="contact1"
         data-aos="fade-up"
         data-aos-duration="1000"
